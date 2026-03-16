@@ -3,7 +3,7 @@
       "host": "localhost",
       "port": 3308,
       "username": "root",
-      "password": "password"
+      "password": "password123"
     },
     "aws": {
       "accessKeyId": "AKIA1234567890ABCD12",
