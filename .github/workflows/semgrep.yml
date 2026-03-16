@@ -1,20 +1,22 @@
 name: Semgrep SAST
 on:
-    pull_request:
-        branches:
-            - main
-    push:
-        branches:
-            - main
-    workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
 jobs:
   semgrep:
     runs-on: ubuntu-latest
+    container:
+      image: semgrep/semgrep
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Run Semgrep SAST
-        uses: returntocorp/semgrep-action@v1
-        with:
-          config: p/php-security-audit
+        run: semgrep scan --config=p/php-security-audit --config=p/owasp-top-ten --error .
