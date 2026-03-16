@@ -22,3 +22,4 @@ jobs:
                 args: git --log-opts $(git merge-base origin/main HEAD)..HEAD --report-format sarif --report-path gitleaks.sarif
               env:
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
