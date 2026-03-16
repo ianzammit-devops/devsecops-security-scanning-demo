@@ -1,0 +1,84 @@
+# =========================
+# Secrets / Credentials
+# =========================
+.env
+.env.*
+*.env
+*.secret
+*.secrets
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.csr
+id_rsa
+id_dsa
+*.pub
+*.gpg
+*.kdbx
+
+# API Keys / Tokens
+config/secrets.yml
+secrets.yml
+credentials.json
+auth.json
+token.json
+
+# Cloud credentials
+.aws/
+.azure/
+.gcp/
+service-account.json
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# Dependency folders
+# =========================
+node_modules/
+vendor/
+venv/
+.envrc
+
+# =========================
+# Build artifacts
+# =========================
+dist/
+build/
+target/
+out/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDE files
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Docker
+# =========================
+docker-compose.override.yml
+*.tar
+
+# =========================
+# Test reports / scans
+# =========================
+reports/
+scan-results/
+*.sarif
