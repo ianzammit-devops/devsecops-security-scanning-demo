@@ -1,8 +1,15 @@
 {
     "database": {
-        "host": "localhost",
-        "port": 3308,
-        "username": "root",
-        "password": "password"
+      "host": "localhost",
+      "port": 3308,
+      "username": "root",
+      "password": "password"
+    },
+    "aws": {
+      "accessKeyId": "AKIA1234567890ABCD12",
+      "secretAccessKey": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+    },
+    "github": {
+      "token": "ghp_1234567890abcdefghijklmnopqrstuvwxyzAB"
     }
-}
+  }
